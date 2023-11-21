@@ -17,11 +17,21 @@ const App = () => {
 	const [input, setInput] = useState("");
 
 	const handleClick = (val: string) => {
-		setInput(input + val);
+		const isResult = input.includes("=");
+
+		if (isResult) {
+			setInput(val);
+		} else {
+			setInput((prevInput) => prevInput + val);
+		}
 	};
 
 	const handleEqual = () => {
-		setInput(math.evaluate(input));
+		const isResult = input.endsWith("=");
+
+		if (!isResult) {
+			setInput((prevInput) => prevInput + "=" + math.evaluate(input));
+		}
 	};
 	const backSpace = () => {
 		setInput(input.slice(0, -1));
@@ -67,5 +77,4 @@ const App = () => {
 		</div>
 	);
 };
-
 export default App;
