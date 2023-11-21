@@ -30,15 +30,7 @@
   cursor: pointer;
   
 }
-.input {
-  text-align: right;
-  background: #ee7700;
-  border-radius: 5px;
-  color: white;
-  font-size: 5vh;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 .clear {
   font-size: 3vh;
   text-transform: uppercase;
