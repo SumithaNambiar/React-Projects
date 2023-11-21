@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  height: 75vh;
+  min-height: 300px;
+  max-height: 100%;
+  background: #bbc3cc;
+  border-radius: 1px;
+}
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.calculator > div,
+.calculator > button {
+  flex: 1;
+}
+.calculator button:hover {
+  background-color: #ff9900;
+  color: #fff;
+  cursor: pointer;
+  
+}
+.input {
+  text-align: right;
+  background: #ee7700;
+  border-radius: 5px;
+  color: white;
+  font-size: 5vh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.clear {
+  font-size: 3vh;
+  text-transform: uppercase;
+}

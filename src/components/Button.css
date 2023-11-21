@@ -1,0 +1,18 @@
+button {
+    border: none;
+    border-radius: px;
+    background: #000000;
+    color: rgb(249, 249, 249);
+    box-shadow: 1px 0px 4px 1px #a9afb6;
+  }
+
+
+.row > button {
+    flex: 1;
+    font-size: 5vh;
+  }
+  .row > button,
+  .input,
+  .clear {
+    margin: 0.5%;
+  }
