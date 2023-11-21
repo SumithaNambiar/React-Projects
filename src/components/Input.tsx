@@ -4,19 +4,19 @@ interface InputProps {
 }
 
 const Input = ({ input }: InputProps) => {
-	const splitInput = input.split("=");
+	const [leftSide, rightSide] = input.split("=");
 
 	return (
 		<div className="input">
 			<div className="currentInput">
-				{splitInput.length > 1 ? (
+				{rightSide ? (
 					<>
-						{splitInput[0]}
+						<span className="input">{leftSide}</span>
 						<br />
-						{splitInput[1]}
+						<span className="result">{rightSide}</span>
 					</>
 				) : (
-					input
+					<span className="input">{input}</span>
 				)}
 			</div>
 		</div>
